@@ -1,13 +1,3 @@
-/*
-	process.c, a dummy process used in COMP30023 2023 Project 1
-	Authored by Steven Tang
-	Reference: signalfd, waitpid, getopt_long
-	https://www.gnu.org/software/libc/manual/html_node/Feature-Test-Macros.html
-	Comments deliberately kept sparse and brief
-	Please report any issues on Ed
-	Last updated 21/03/23
-*/
-
 #define _POSIX_C_SOURCE 1
 
 #include <err.h>
@@ -228,7 +218,7 @@ void read_store_dword(Op op, uint8_t hash_content[128], size_t* dest_index) {
 }
 
 /*****************************************************************************/
-/* SHA-256 Hashing, implemented by Steven Tang */
+/* SHA-256 Hashing */
 /* Reference: RFC 6234 */
 
 /* SHA-256 Functions: RFC 6234, FIPS 180-3 section 4.1.2 */
